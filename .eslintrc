@@ -1,0 +1,31 @@
+{
+  "extends": ["standard", "prettier", 'plugin:react/recommended'],
+  "plugins": ["import", "mocha", "react", "react-hooks"],
+  "env": {
+    "mocha": true,
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-uses-vars": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.spec.mjs",
+        ],
+        "optionalDependencies": false,
+        "peerDependencies": true
+      }
+    ],
+    "mocha/no-exclusive-tests": "error",
+    "mocha/no-nested-tests": "error",
+    "mocha/no-identical-title": "error"
+  }
+}

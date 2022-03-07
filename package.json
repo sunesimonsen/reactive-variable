@@ -1,0 +1,53 @@
+{
+  "name": "reactive-variable",
+  "version": "0.0.0",
+  "description": "An implementation of the Apollo Reactive Variables that can be used as stepping stone for upgrading from v2 to v3.",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint **/*.mjs && prettier --check '**/*.{mjs,md,json}'",
+    "format": "prettier --write **/*.{mjs,md,json}",
+    "preversion": "npm run lint && npm run test",
+    "version": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
+  },
+  "keywords": [
+    "React",
+    "Apollo",
+    "Reactive",
+    "useReactiveVar"
+  ],
+  "author": "Sune Simonsen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunesimonsen/reactive-variable"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "mocha": "^9.2.1",
+    "offline-github-changelog": "^2.4.0",
+    "prettier": "^2.5.1",
+    "react": "^16.9.0",
+    "unexpected": "^12.0.4"
+  },
+  "peerDependencies": {
+    "react": "16 | 17"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

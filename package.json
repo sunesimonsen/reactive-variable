@@ -39,6 +39,7 @@
     "offline-github-changelog": "^2.4.0",
     "prettier": "^2.5.1",
     "react": "^16.9.0",
+    "react-test-renderer": "^17.0.2",
     "unexpected": "^12.0.4"
   },
   "peerDependencies": {
@@ -48,6 +49,6 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   }
 }

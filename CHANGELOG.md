@@ -1,3 +1,7 @@
+### v0.3.0 (2022-03-10)
+
+- [#2](https://github.com/sunesimonsen/reactive-variable/pull/2) Bundle for better compatibility with Jest ([Sune Simonsen](mailto:sune@we-knowhow.dk))
+
 ### v0.2.0 (2022-03-08)
 
 - [Updated package-lock.json](https://github.com/sunesimonsen/reactive-variable/commit/061b0928026308b2698a4020514bbc91aabb2423) ([Sune Simonsen](mailto:sune@we-knowhow.dk))

@@ -18,6 +18,7 @@
       "error",
       {
         "devDependencies": [
+          "rollup.config.js",
           "**/*.spec.mjs",
         ],
         "optionalDependencies": false,
